@@ -71,7 +71,10 @@ nav {
   align-items: center;
   gap: 60px;
 }
-
+.navbar-shrink {
+  background: rgb(14, 15, 14);
+  padding: 25px 0;
+}
 .nav-btn {
   display: flex;
   align-items: center;
