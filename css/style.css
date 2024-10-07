@@ -74,6 +74,7 @@ nav {
 .navbar-shrink {
   background: rgb(14, 15, 14);
   padding: 25px 0;
+  transition: 0.5s;
 }
 .nav-btn {
   display: flex;
