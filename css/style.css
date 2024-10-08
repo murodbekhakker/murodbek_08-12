@@ -861,7 +861,7 @@ nav {
   .dark .hero {
     background-image: linear-gradient(
       to right,
-      var(--blue) 50%,
+      var(--black) 50%,
       var(--black) 50%
     );
   }
