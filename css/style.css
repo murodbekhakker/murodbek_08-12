@@ -856,6 +856,13 @@ nav {
       var(--black) 50%
     );
   }
+  .dark .hero {
+    background-image: linear-gradient(
+      to right,
+      var(--blue) 50%,
+      var(--black) 50%
+    );
+  }
   .logo-imgs {
     flex-wrap: wrap;
     justify-content: center;
