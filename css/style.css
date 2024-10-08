@@ -677,19 +677,7 @@ nav {
   line-height: 28px;
   text-align: center;
 }
-@media (max-width: 900px) {
-  .img--NAVI_1 {
-    padding-top: 0px;
-  }
-}
-@media (max-width: 900px) {
-  .game-img1 {
-    display: none;
-  }
-  .game__world__multiplayer {
-    padding-top: 0px;
-  }
-}
+
 @media (max-width: 900px) {
   nav {
     flex-direction: column;
@@ -712,6 +700,15 @@ nav {
   .activeBtn {
     display: flex;
   }
+  .game-img1 {
+    display: none;
+  }
+  .game__world__multiplayer {
+    padding-top: 0px;
+  }
+  .img--NAVI_1 {
+    padding-top: 0px;
+  }
 }
 @media (max-width: 530px) {
   .text-gaming-needs {
@@ -726,6 +723,12 @@ nav {
   .the__newp-area {
     font-size: 40px;
     line-height: 40px;
+  }
+  .game-img1 {
+    display: none;
+  }
+  .game__world__multiplayer {
+    padding-top: 0px;
   }
 }
 @media (max-width: 550px) {
@@ -841,16 +844,6 @@ nav {
   }
 }
 @media (max-width: 1400px) {
-  .game-img3 {
-    display: none;
-  }
-  .controL__NAVI {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media (max-width: 1400px) {
   .hero {
     background-image: linear-gradient(
       to right,
@@ -861,9 +854,18 @@ nav {
   .dark .hero {
     background-image: linear-gradient(
       to right,
-      var(--black) 50%,
-      var(--black) 50%
+      var(--black-piano) 50%,
+      var(--black-piano) 50%
     );
+  }
+  .dark .h1-gaming {
+    color: var(--green);
+  }
+  .dark .p-future {
+    color: var(--gold);
+  }
+  .dark .p-tag-lorem {
+    color: var(--white);
   }
   .logo-imgs {
     flex-wrap: wrap;
@@ -872,6 +874,17 @@ nav {
   .game__world__multiplayer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .cloudgaming {
+    max-width: 100%;
+  }
+  .game-img3 {
+    display: none;
+  }
+  .controL__NAVI {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -911,11 +924,6 @@ nav {
 @media (max-width: 1500px) {
   .geymer__img-text {
     flex-direction: column;
-  }
-}
-@media (max-width: 1400px) {
-  .cloudgaming {
-    max-width: 100%;
   }
 }
 @media (max-width: 720px) {
