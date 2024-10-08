@@ -20,7 +20,9 @@ body {
   --black-piano: #000000;
   --blue-color: rgb(57, 5, 246);
   --green: rgb(5, 246, 45);
+  --red: rgb(246, 5, 5);
 }
+
 .dark header {
   background-image: linear-gradient(
     to right,
@@ -60,9 +62,28 @@ body {
 .dark .latest-p {
   color: var(--gold);
 }
-.dark .img__color {
-  background-color: var(--);
+.dark .p-temam-up {
+  color: var(--gold);
 }
+.dark .navi-simpl {
+  color: var(--green);
+}
+.dark .largest {
+  color: var(--white);
+}
+.dark .porttitor {
+  color: var(--green);
+}
+.dark .Latest-news {
+  background-color: var(--black);
+}
+.dark .data-text-IMG {
+  color: var(--white);
+}
+.dark .input__texts {
+  background: var(--black-piano);
+}
+
 .container {
   /* 1440 - 2 * 60 + 2 * 20 = 1360 */
   max-width: 1360px;
