@@ -86,6 +86,15 @@ body {
 .dark .p-future {
   color: var(--white);
 }
+.dark .text-vidio_gaming{
+  color: var(--gold);
+}
+.dark .p-text_vidio_gaming{
+  color: var(--white);
+}
+.dark .vidio__gaming{
+  background-color: var(--black);
+}
 .container {
   /* 1440 - 2 * 60 + 2 * 20 = 1360 */
   max-width: 1360px;
@@ -113,6 +122,7 @@ header {
   position: sticky;
   max-width: 100%;
   top: 0;
+  z-index: 1;
 }
 nav {
   display: flex;
@@ -489,7 +499,72 @@ nav {
   line-height: 58px;
   color: var(--white);
 }
-
+.vidio__gaming {
+  background-color: var(--black-piano);
+}
+.img_olovcha_texts {
+  padding-top: 129px;
+  display: flex;
+  align-items: center;
+}
+.text_p-esports {
+  color: var(--blue);
+  font-family: Orbitron;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
+.text-vidio_gaming {
+  padding-top: 12px;
+  width: 100%;
+  max-width: 684px;
+  height: 148px;
+  font-family: Orbitron;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 74px;
+  text-align: left;
+  color: var(--white);
+}
+.p-text_vidio_gaming {
+  width: 100%;
+  padding-top: 38px;
+  color: var(--grey);
+  max-width: 721px;
+  font-family: Orbitron;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+.btn-vidio-gaming {
+  margin-bottom: 123px;
+  margin-top: 54px;
+  width: 203px;
+  height: 70px;
+  background-color: var(--grey);
+  border: none;
+}
+.btn-vidio-gaming:hover {
+  background-color: var(--blue);
+}
+.p-vidio-btn {
+  padding: 0 0 0 34px;
+  font-family: Orbitron;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: var(--white);
+}
+.text-and-vidio-game {
+  display: flex;
+}
+.game_vidio {
+  margin-top: 85px;
+  margin-left: 95px;
+}
 .game-img1 {
   background-image: url("../images/FPS.svg");
 }
@@ -752,7 +827,7 @@ nav {
     line-height: 34px;
   }
   .nav-menu {
-    gap: 35px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
   }
@@ -787,6 +862,13 @@ nav {
     margin-top: 60px;
   }
 }
+@media (max-width: 650px) {
+  .p-text_vidio_gaming {
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 15px;
+  }
+}
 @media (max-width: 690px) {
   .sed__up {
     font-size: 15px;
@@ -797,6 +879,11 @@ nav {
   }
   .btn-READ {
     margin-top: 40px;
+  }
+  .text-vidio_gaming {
+    font-size: 44px;
+    font-weight: 200;
+    line-height: 54px;
   }
 }
 @media (max-width: 470px) {
@@ -812,6 +899,11 @@ nav {
   .the__newp-area {
     font-size: 10px;
     line-height: 24px;
+  }
+  .text-vidio_gaming {
+    font-size: 34px;
+    font-weight: 150;
+    line-height: 44px;
   }
 }
 @media (max-width: 370px) {
@@ -895,6 +987,21 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+@media (max-width: 1280px) {
+  .text-and-vidio-game {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .game_vidio {
+    max-width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .btn-vidio-gaming {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 1230px) {
