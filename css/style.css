@@ -83,7 +83,9 @@ body {
 .dark .input__texts {
   background: var(--black-piano);
 }
-
+.dark .p-future {
+  color: var(--white);
+}
 .container {
   /* 1440 - 2 * 60 + 2 * 20 = 1360 */
   max-width: 1360px;
