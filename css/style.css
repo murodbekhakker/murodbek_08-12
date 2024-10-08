@@ -18,8 +18,51 @@ body {
   --grey: #999999;
   --background-grey: #ffffff26;
   --black-piano: #000000;
+  --blue-color: rgb(57, 5, 246);
+  --green: rgb(5, 246, 45);
+}
+.dark header {
+  background-image: linear-gradient(
+    to right,
+    var(--blue) 50%,
+    var(--black) 50%
+  );
+}
+.dark .navbar-shrink {
+  background: var(--blue-color);
 }
 
+.dark .hero {
+  background-image: linear-gradient(
+    to right,
+    var(--blue) 50%,
+    var(--black) 50%
+  );
+}
+.dark .sponsors {
+  background-color: var(--green);
+}
+.dark .count-P-TECH {
+  color: var(--gold);
+}
+.dark .text-gaming-needs {
+  color: var(--gold);
+}
+.dark .gameplay {
+  color: var(--gold);
+}
+.dark .gameng-shop-voluptatem {
+  color: var(--white);
+}
+.dark .p-text-Vestibum {
+  color: var(--white);
+}
+.dark .latest-p {
+  color: var(--gold);
+}
+.dark .img__color {
+  background-color: var(--);
+}
 .container {
   /* 1440 - 2 * 60 + 2 * 20 = 1360 */
   max-width: 1360px;
