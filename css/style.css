@@ -112,6 +112,9 @@ body {
 .dark .vidio__gaming {
   background-color: var(--black);
 }
+.dark .dropdown-content {
+  box-shadow: 5px 10px 18px 5px rgb(2, 237, 2);
+}
 .container {
   /* 1440 - 2 * 60 + 2 * 20 = 1360 */
   max-width: 1360px;
@@ -184,6 +187,24 @@ nav {
 }
 .nav-btn__link:hover {
   color: yellow;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 5px 10px 18px 5px rgb(7, 141, 190);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 .h1-gaming {
   width: 100%;
@@ -268,6 +289,13 @@ nav {
   height: 70px;
   transition: 1s;
 }
+.hero-btn-link:active {
+  border: 1px solid;
+  background-color: var(--blue);
+  width: 203px;
+  height: 70px;
+  transition: 1s;
+}
 .hero-btn {
   margin-top: 74px;
   background-color: var(--black-piano);
@@ -284,6 +312,11 @@ nav {
   height: 70px;
 }
 .hero-btn:hover {
+  border: 1px solid;
+  background-color: var(--blue);
+  transition: 1s;
+}
+.hero-btn:active {
   border: 1px solid;
   background-color: var(--blue);
   transition: 1s;
