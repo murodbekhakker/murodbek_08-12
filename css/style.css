@@ -289,13 +289,6 @@ nav {
   height: 70px;
   transition: 1s;
 }
-.hero-btn-link:active {
-  border: 1px solid;
-  background-color: var(--blue);
-  width: 203px;
-  height: 70px;
-  transition: 1s;
-}
 .hero-btn {
   margin-top: 74px;
   background-color: var(--black-piano);
@@ -316,12 +309,6 @@ nav {
   background-color: var(--blue);
   transition: 1s;
 }
-.hero-btn:active {
-  border: 1px solid;
-  background-color: var(--blue);
-  transition: 1s;
-}
-
 /* aside */
 .gereration-img-white {
   position: absolute;
