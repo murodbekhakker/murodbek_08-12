@@ -22,7 +22,9 @@ body {
   --green: rgb(5, 246, 45);
   --red: rgb(246, 5, 5);
 }
-
+#mode-btn {
+  cursor: pointer;
+}
 .dark header {
   background-image: linear-gradient(
     to right,
@@ -40,6 +42,21 @@ body {
     var(--blue) 50%,
     var(--black) 50%
   );
+}
+.dark .h1-gaming {
+  color: var(--black-piano);
+}
+.dark .p-tag-lorem {
+  color: var(--white);
+}
+.dark .hero-btn:hover {
+  background-color: var(--green);
+}
+.dark .hero-btn-link:hover {
+  background-color: var(--green);
+}
+.dark .btn-vidio-gaming:hover {
+  background-color: var(--green);
 }
 .dark .sponsors {
   background-color: var(--green);
@@ -84,15 +101,15 @@ body {
   background: var(--black-piano);
 }
 .dark .p-future {
-  color: var(--white);
+  color: var(--black);
 }
-.dark .text-vidio_gaming{
+.dark .text-vidio_gaming {
   color: var(--gold);
 }
-.dark .p-text_vidio_gaming{
+.dark .p-text_vidio_gaming {
   color: var(--white);
 }
-.dark .vidio__gaming{
+.dark .vidio__gaming {
   background-color: var(--black);
 }
 .container {
@@ -367,7 +384,7 @@ nav {
   padding-top: 35px;
   max-width: 365.08px;
   height: 42px;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 42px;
   text-align: left;
@@ -543,8 +560,9 @@ nav {
   margin-top: 54px;
   width: 203px;
   height: 70px;
-  background-color: var(--grey);
-  border: none;
+  background-color: var(--black-piano);
+  border-color: var(--white);
+  transition: 0.5s;
 }
 .btn-vidio-gaming:hover {
   background-color: var(--blue);
@@ -576,6 +594,7 @@ nav {
 }
 
 .olovcha-p-text_of {
+  padding-top: 40px;
   display: flex;
   align-items: center;
 }
@@ -752,187 +771,9 @@ nav {
   line-height: 28px;
   text-align: center;
 }
-
-@media (max-width: 900px) {
-  nav {
+@media (max-width: 1500px) {
+  .geymer__img-text {
     flex-direction: column;
-  }
-  .nav-brand {
-    max-width: 100%;
-  }
-  .hamburger {
-    display: flex !important;
-  }
-  .nav-menu {
-    display: none;
-  }
-  .active {
-    display: flex;
-  }
-  .nav-btn {
-    display: none;
-  }
-  .activeBtn {
-    display: flex;
-  }
-  .game-img1 {
-    display: none;
-  }
-  .game__world__multiplayer {
-    padding-top: 0px;
-  }
-  .img--NAVI_1 {
-    padding-top: 0px;
-  }
-}
-@media (max-width: 530px) {
-  .text-gaming-needs {
-    font-size: 44px;
-    line-height: 54px;
-  }
-  .gameng-shop-voluptatem {
-    padding-top: 0px;
-  }
-}
-@media (max-width: 420px) {
-  .the__newp-area {
-    font-size: 40px;
-    line-height: 40px;
-  }
-  .game-img1 {
-    display: none;
-  }
-  .game__world__multiplayer {
-    padding-top: 0px;
-  }
-}
-@media (max-width: 550px) {
-  .nav-menu {
-    max-width: 100%;
-    justify-content: space-between;
-    gap: 0;
-    margin: 25px 0;
-  }
-  .vector {
-    display: none;
-  }
-  .gameplay {
-    padding-left: 10px;
-  }
-  .p-text-Vestibum {
-    padding: 28px 0 0 10px;
-  }
-  .the__newp-area {
-    font-size: 24px;
-    line-height: 34px;
-  }
-  .nav-menu {
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-  .nav-btn {
-    padding-top: 25px;
-  }
-}
-@media (max-width: 600px) {
-  .gereration-img-white {
-    display: none;
-  }
-  .p-temam-up {
-    font-size: 25px;
-    line-height: 30px;
-  }
-  .navi-simpl {
-    font-size: 15px;
-    line-height: 20px;
-  }
-  .gereration-imgvs {
-    display: none;
-  }
-}
-@media (max-width: 450px) {
-  .largest {
-    font-size: 30px;
-    line-height: 35px;
-  }
-}
-@media (max-width: 410px) {
-  .p-text-lorem-ipsum {
-    margin-top: 60px;
-  }
-}
-@media (max-width: 650px) {
-  .p-text_vidio_gaming {
-    font-size: 10px;
-    font-weight: 200;
-    line-height: 15px;
-  }
-}
-@media (max-width: 690px) {
-  .sed__up {
-    font-size: 15px;
-    line-height: 20px;
-  }
-  .latest_btn {
-    flex-direction: column;
-  }
-  .btn-READ {
-    margin-top: 40px;
-  }
-  .text-vidio_gaming {
-    font-size: 44px;
-    font-weight: 200;
-    line-height: 54px;
-  }
-}
-@media (max-width: 470px) {
-  .hero-btns {
-    flex-direction: column;
-  }
-  .largest {
-    font-size: 30px;
-    line-height: 40px;
-  }
-}
-@media (max-width: 360px) {
-  .the__newp-area {
-    font-size: 10px;
-    line-height: 24px;
-  }
-  .text-vidio_gaming {
-    font-size: 34px;
-    font-weight: 150;
-    line-height: 44px;
-  }
-}
-@media (max-width: 370px) {
-  .nav-menu {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .img--NAVI_1 {
-    padding-top: 0px;
-  }
-}
-@media (max-width: 380px) {
-  .text-gaming-needs {
-    line-height: 35px;
-    font-size: 25px;
-  }
-  .gameng-shop-voluptatem {
-    font-size: 15px;
-    line-height: 20px;
-  }
-  .gameplay {
-    font-size: 25px;
-    line-height: 35px;
-  }
-  .p-text-Vestibum {
-    margin-top: 20px;
-    font-size: 15px;
-    line-height: 20px;
-    height: 160px;
   }
 }
 @media (max-width: 1400px) {
@@ -980,6 +821,10 @@ nav {
     justify-content: center;
     align-items: center;
   }
+  .gameplay {
+    font-size: 25px;
+    line-height: 35px;
+  }
 }
 @media (max-width: 1370px) {
   .hero-imgs {
@@ -1022,15 +867,63 @@ nav {
     align-items: center;
   }
 }
-
-@media (max-width: 1370px) {
-  .game-people {
-    padding-top: 40px;
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+  }
+  .nav-brand {
+    width: 100%;
+  }
+  .hamburger {
+    display: flex !important;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .active {
+    display: flex;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .activeBtn {
+    display: flex;
+  }
+  .game-img1 {
+    display: none;
+  }
+  .game__world__multiplayer {
+    padding-top: 0px;
+  }
+  .img--NAVI_1 {
+    padding-top: 0px;
+  }
+  .nav-btn__link {
+    margin-top: 20px;
+  }
+  #mode-btn {
+    margin-top: 25px;
   }
 }
-@media (max-width: 1500px) {
-  .geymer__img-text {
-    flex-direction: column;
+@media (max-width: 820px) {
+  .largest {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .porttitor {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+@media (max-width: 760px) {
+  .latest-p {
+    font-size: 34px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 740px) {
+  .gereration-img {
+    display: none;
   }
 }
 @media (max-width: 720px) {
@@ -1048,24 +941,163 @@ nav {
     line-height: 54px;
   }
 }
-@media (max-width: 740px) {
-  .gereration-img {
+@media (max-width: 690px) {
+  .sed__up {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .latest_btn {
+    flex-direction: column;
+  }
+  .btn-READ {
+    margin-top: 40px;
+  }
+  .text-vidio_gaming {
+    font-size: 44px;
+    font-weight: 200;
+    line-height: 54px;
+  }
+}
+@media (max-width: 650px) {
+  .p-text_vidio_gaming {
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .gereration-img-white {
+    display: none;
+  }
+  .p-temam-up {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .navi-simpl {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .gereration-imgvs {
     display: none;
   }
 }
-@media (max-width: 760px) {
-  .latest-p {
-    font-size: 34px;
+@media (max-width: 550px) {
+  .nav-menu {
+    max-width: 100%;
+    justify-content: space-between;
+    gap: 0;
+    margin: 25px 0;
+  }
+  .vector {
+    display: none;
+  }
+  .gameplay {
+    padding-left: 10px;
+  }
+  .p-text-Vestibum {
+    padding: 28px 0 0 10px;
+  }
+  .the__newp-area {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .nav-menu {
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-btn {
+    padding-top: 25px;
+  }
+}
+@media (max-width: 530px) {
+  .text-gaming-needs {
+    font-size: 44px;
+    line-height: 54px;
+  }
+  .gameng-shop-voluptatem {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 470px) {
+  .hero-btns {
+    flex-direction: column;
+  }
+  .largest {
+    font-size: 30px;
     line-height: 40px;
   }
 }
-@media (max-width: 820px) {
+@media (max-width: 450px) {
   .largest {
-    font-size: 40px;
-    line-height: 55px;
+    font-size: 30px;
+    line-height: 35px;
   }
-  .porttitor {
+}
+@media (max-width: 420px) {
+  .the__newp-area {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .game-img1 {
+    display: none;
+  }
+  .game__world__multiplayer {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 410px) {
+  .p-text-lorem-ipsum {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 380px) {
+  .text-gaming-needs {
+    line-height: 35px;
+    font-size: 25px;
+  }
+  .gameng-shop-voluptatem {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .gameplay {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .p-text-Vestibum {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    height: 160px;
+  }
+}
+@media (max-width: 360px) {
+  .the__newp-area {
     font-size: 10px;
-    line-height: 15px;
+    line-height: 24px;
+  }
+  .text-vidio_gaming {
+    font-size: 34px;
+    font-weight: 150;
+    line-height: 44px;
+  }
+}
+@media (max-width: 340px) {
+  .gameplay {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 370px) {
+  .nav-menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .img--NAVI_1 {
+    padding-top: 0px;
+  }
+  .game-people {
+    padding-top: 40px;
   }
 }
